@@ -11,8 +11,6 @@ Once i figured out how the old circuit works I added some basic code to test out
 Adding sound detection and filtering:
 Using a capacitive microphone and a 386D OP Amp I built a board which supplies the Arduino an amplified (gain @200) analog signal biased on 2.5V (0-5V range). Using some filtering software (Fast fourier transforms) I extracted the low frequency noises which give the rythm of the music and powered on/off the lights accordingly. The code could have been improved but the main issue was the low quality microphone which picked up lots of unfiltered noise.
 
-I chose not to upload the code here, but it is based around the https://github.com/circuitar/Dimmer project which uses a Zero-Cross detection algorithm and the Arduino internal timers.
-
 Video:
 
 https://youtu.be/BRpwzS5ST4w - mostly following the beat of the music, but it gets false positives or misses steps sometimes
